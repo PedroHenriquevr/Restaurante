@@ -1,14 +1,12 @@
-import { useState } from "react"
-
+import styles from './Cardapio.module.scss'
+import logo from '../../assets/logo_pepe.png'
 export default function Cardapio() {
-    const [count, setCount] = useState()
-    const addValue() => () {
-        setCount + 1;
-    }
+
     return(
-        <>
-        <h1>Pepe Delicinhas</h1>
-        <button onClick={}></button>
-        </>
+        <main>
+            <nav className={styles.menu}>
+                <img src={logo} className={styles.logo} />
+            </nav>
+        </main>
     )
 }
