@@ -1,4 +1,5 @@
 import style from './Buscador.module.scss'
+import { CgSearch } from 'react-icons/cg'
 
 type props = {
     busca: string,
@@ -12,7 +13,9 @@ export default function Buscador({busca, setBusca}: props) {
             <input className={style.input} value={busca}
             onChange={(evento) => setBusca(evento.target.value)}
             type='text'
+            placeholder='Buscar...'
             />
+            <CgSearch size={20} color='#4c4d5e'/>
         </div>
     )
 }
